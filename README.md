@@ -3,8 +3,8 @@ generate text in various ways
 
 
 ## マルコフ連鎖
-###markov_chain.py
-####使い方
+### markov_chain.py
+#### 使い方
 ※日本語の形態素解析エンジンのMeCabのインストールが必要です。
 
 ```Python
@@ -16,13 +16,13 @@ markov.make_model(text)
 print(markov.make_sentence())
 ```
 
-- class __MarkovChain__(order=2)
- N階マルコフ連鎖で文章生成を行うクラスです。
- - order \[int\]
+- class __MarkovChain__(order=2)  
+ N階マルコフ連鎖で文章生成を行うクラスです。  
+ - order \[int\] 
   N階マルコフ連鎖のNにあたります。指定した値の分だけ単語を使用し、次の単語を確率に従って選択します。
   デフォルト値は２です。
 
-- method MarkovChain.__make_model__(text)
+- method MarkovChain.__make_model__(text)    
 　N階マルコフ連鎖を利用したモデルを生成します。
 　戻り値は無く、インスタンス変数のMarkovChain.modelを作成します。
 　複数回呼び出された時はMarkovChain.modelに追記します。
